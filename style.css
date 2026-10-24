@@ -1,0 +1,7 @@
+.main-body{
+    width: 50%;
+    height: 100px;
+    color: #000;
+    display: flex;
+    position: center;
+}
