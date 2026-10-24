@@ -1,86 +1,48 @@
 *{
-    display: block;
-    align-items: center;
+    box-sizing: border-box;
 }
 
 .main-body{
-    width: 500px;
-    height: 500px;
+    width: min(500px, 90vw);
+    min-height: 500px;
+    padding: 20px;
     color: #000;
     background-color: #000;
     position: absolute;
     top: 20px;
     left: 25%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     border-radius: 2px;
     border: 10px solid rgb(56, 53, 53);
 }
 
 .btn{
+    width: 70px;
+    height: 55px;
+    border: 1px solid #555;
     border-radius: 9px;
     background-color: #ffffff18;
     color: #fff;
-    position: relative;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
 
 .keys{
     display: flex;
+    flex: 1;
     align-items: center;
     justify-content: center;
-    position: relative;
+    gap: 12px;
     flex-direction: column;
     
 }
-.row-1{
-    position: relative;
-    top: 120px;
-    width: 90%;
-    align-items: center;
+.row{
+    gap: 12px;
     justify-content: center;
     display: flex;
 }
 
-.row-2{
-    position: relative;
-    top: 140px;
-    width: 90%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.row-3{
-    position: relative;
-    top: 160px;
-    width: 90%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.row-4{
-    position: relative;
-    top: 180px;
-    width: 90%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.row-5{
-    position: relative;
-    top: 200px;
-    width: 90%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.row-6{
-    position: relative;
-    top: 220px;
-    width: 90%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+.btn:hover {
+    background-color: #ffffff30;
 }
