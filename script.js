@@ -20,7 +20,7 @@ buttons.forEach(function (button) {
                 return;
             }
         } else {
-            if ('+-*/'.includes(value) && expresssion === '' || '+-*/'.includes(expression.slice(-1))) {
+            if ('+-*/'.includes(value) && expression === '' || '+-*/'.includes(expression.slice(-1))) {
                 return;
             }
             expression += value;
