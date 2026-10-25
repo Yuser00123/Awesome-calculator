@@ -11,7 +11,7 @@ A simple calculator built with HTML, CSS, and JavaScript.
 - Error handling for invalid input
 
 ## How to run
-Open `index.html` in a browser, or visit the live demo: [your link here]
+Open `index.html` in a browser, or visit the live demo:  [Live Demo](https://awesome-calculator-ashen.vercel.app/)
 
 ## What I learned
 - Selecting elements with getElementById and querySelectorAll
