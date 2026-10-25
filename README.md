@@ -1,5 +1,8 @@
 # Awesome Calculator
 
+## Screenshot
+![Awesome Calculator](screenshot.png)
+
 A simple calculator built with HTML, CSS, and JavaScript.
 
 ## Features
