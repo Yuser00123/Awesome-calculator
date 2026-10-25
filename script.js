@@ -13,7 +13,7 @@ buttons.forEach(function (button) {
             if (expression === '') return;
 
             try{
-                expression - String(eval(expression));
+                expression = String(eval(expression));
             } catch {
                 display.textContent = 'Error';
                 expression = '';
