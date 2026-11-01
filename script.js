@@ -51,3 +51,37 @@ buttons.forEach(function (button) {
         display.textContent = expression || '0';
     });
 });
+
+const calcTab = document.getElementById('calc-tab');
+const bmiTab = document.getElementById('bmi-tab');
+const calcSection = document.getElementById('calc-section');
+const bmiSection = document.getElementById('bmi-section');
+
+calcTab.addEventListener('click', function () {
+    calcSection.classList.remove('hidden');
+    bmiSection.classList.add('hidden');
+    calcTab.classList.add('active');
+    bmiTab.classList.remove('active');
+});
+
+bmiTab.addEventListener('click', function () {
+    bmiSection.classList.remove('hidden');
+    calcSection.classList.add('hidden');
+    bmiTab.classList.add('active');
+    calcTab.classList.remove('active');
+});
+
+document.addEventListener('keydown', function (event) {
+    if (calcSection.classList.contains('hidden')) return;
+
+    let key = event.key;
+    if (key === 'Enter') key = 'equal';
+    if (key === 'Escape') key = 'clear';
+    if (key === 'Backspace') key = 'delete';
+
+    const matchingButton = document.querySelector(`.btn[data-value="${key}"]`);
+    if (matchingButton) {
+        event.preventDefault();
+        matchingButton.click();
+    }
+});
