@@ -6,9 +6,10 @@
 A simple calculator built with HTML, CSS, and JavaScript.
 
 ## Features
-- Basic operations: add, subtract, multiply, divide
+- Basic operations: add, subtract, multiply, divide, percent
 - Clear button and decimal support
-- Error handling for invalid input
+- Error handling for invalid input and output
+- BMI calculation
 
 ## How to run
 Open `index.html` in a browser, or visit the live demo:  [Live Demo](https://awesome-calculator-ashen.vercel.app/)
