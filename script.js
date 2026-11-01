@@ -85,3 +85,41 @@ document.addEventListener('keydown', function (event) {
         matchingButton.click();
     }
 });
+
+const heightInput = document.getElementById('height');
+const weightInput = document.getElementById('weight');
+const bmiResult = document.getElementById('bmi-result');
+const bmiBtn = document.getElementById('bmi-btn');
+const bmiReset = document.getElementById('bmi-reset');
+
+bmiBtn.addEventListener('click', function () {
+    const heightCm = Number(heightInput.value);
+    const weightKg = Number(weightInput.value);
+
+    if (heightCm <= 0 || weightKg <= 0) {
+        bmiResult.textContent = 'Please enter valid inputs.';
+        return;
+    }
+
+    const heightMeters = heightCm / 100;
+    const bmi = (weightKg / (heightMeters * heightMeters)).toFixed(1);
+
+    let category = '';
+    if (bmi < 18.5) {
+        category = 'Underweight';
+    } else if (bmi < 25) {
+        category = 'Normal';
+    } else if (bmi < 30) {
+        category = 'Overweight';
+    } else {
+        category = 'Obese';
+    }
+    bmiResult.textContent = bmi + ' (' + category + ')';
+
+});
+
+bmiReset.addEventListener('click', function () {
+    heightInput.value = '';
+    weightInput.value = '';
+    bmiResult.textContent = 'BMI: --';
+});
