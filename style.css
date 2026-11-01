@@ -100,3 +100,71 @@ body{
 .clear:hover{
     background-color: #ff6961;
 }
+
+.tabs{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.tab{
+    flex: 1;
+    padding: 10px;
+    background-color: #222;
+    color: #aaa;
+    border: 1px solid #444;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.tab.active{
+    background-color: #00ff88;
+    color: #000;
+    font-weight: bold;
+    border: none;
+}
+
+.bmi-section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bmi-screen{
+    font-size: 1.4rem;
+    justify-content: center;
+}
+
+.bmi-section input{
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.bmi-button,
+.bmi-reset{
+    padding: 12px;
+    border-radius: 9px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.bmi-btn{
+    background-color: #00ff88;
+    color: #000;
+    font-weight: bold;
+}
+
+.bmi-reset{
+    background-color: #ffffff18;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.hidden{
+    display: none;
+}
